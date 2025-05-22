@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pete O'Rourke Business Card</title>
+    <title>Pete O'Rourke Resume</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
@@ -13,53 +13,18 @@
         font-family: 'Roboto', sans-serif;
         display: flex;
         justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
+        align-items: flex-start;
+        padding: 40px;
         background-color: #f5f1eb;
+        margin: 0;
     }
 
     .card {
         background-color: #ffffff;
-        padding: 25px;
+        padding: 30px;
         box-shadow: 0 4px 8px rgba(0,0,0,0.05);
         border-radius: 10px;
-        text-align: center;
-        width: 380px;
-    }
-
-    .name {
-        font-size: 26px;
-        font-weight: 300;
-        color: #6a6a6a;
-        margin-bottom: 10px;
-    }
-
-    .title {
-        font-size: 18px;
-        color: #9e9e9e;
-        margin-bottom: 20px;
-    }
-
-    .contact {
-        font-size: 14px;
-        color: #7a7a7a;
-        margin-bottom: 5px;
-    }
-
-    .experience {
-        text-align: left;
-        margin-top: 20px;
-        font-size: 14px;
-        color: #6a6a6a;
-    }
-
-    .experience ul {
-        padding-left: 20px;
-    }
-
-    .experience li {
-        margin-bottom: 5px;
+        width: 700px;
     }
 
     .profile-img {
@@ -69,22 +34,82 @@
         object-fit: cover;
         margin-bottom: 15px;
     }
+
+    .header {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .name {
+        font-size: 28px;
+        font-weight: 300;
+        color: #6a6a6a;
+    }
+
+    .title {
+        font-size: 18px;
+        color: #9e9e9e;
+    }
+
+    .contact {
+        font-size: 14px;
+        color: #7a7a7a;
+        margin: 2px 0;
+    }
+
+    .section-title {
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        color: #4a4a4a;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 5px;
+    }
+
+    .section ul {
+        padding-left: 20px;
+    }
+
+    .section li {
+        margin-bottom: 8px;
+        font-size: 14px;
+        color: #555;
+    }
+
+    .resume-entry {
+        margin-bottom: 15px;
+    }
+
+    .resume-entry h4 {
+        margin: 0;
+        font-size: 16px;
+        color: #333;
+    }
+
+    .resume-entry p {
+        margin: 3px 0 0 0;
+        font-size: 14px;
+        color: #555;
+    }
 </style>
 ```
 
 </head>
 <body>
     <div class="card">
-        <img src="https://i.imgur.com/FPHkGm1.jpeg" alt="Pete O'Rourke" class="profile-img">
-        <div class="name">Pete O'Rourke, M.S., CCC-SLP</div>
-        <div class="title">Speech-Language Pathologist</div>
-        <div class="contact">Email: simplyslps@gmail.com</div>
-        <div class="contact">Phone: (805) 341-2334</div>
-        <div class="contact">Location: Mesa, Arizona</div>
+        <div class="header">
+            <img src="https://i.imgur.com/FPHkGm1.jpeg" alt="Pete O'Rourke" class="profile-img">
+            <div class="name">Pete O'Rourke, M.S., CCC-SLP</div>
+            <div class="title">Speech-Language Pathologist</div>
+            <div class="contact">Email: simplyslps@gmail.com</div>
+            <div class="contact">Phone: (805) 341-2334</div>
+            <div class="contact">Location: Mesa, Arizona</div>
+        </div>
 
 ```
-    <div class="experience">
-        <strong>Professional Experience:</strong>
+    <div class="section">
+        <div class="section-title">Professional Summary</div>
         <ul>
             <li>26 years of experience in Speech-Language Pathology.</li>
             <li>Specializes in pragmatic language development.</li>
@@ -93,6 +118,35 @@
             <li>Pursuing ABA Certification through Arizona State University.</li>
             <li>Founder and manager of Simply SLPs, LLC.</li>
         </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Experience</div>
+
+        <div class="resume-entry">
+            <h4>Speech-Language Pathologist – Simply SLPs, LLC (Owner)</h4>
+            <p>August 2019 – Current | Contract SLP with Charter Schools in Arizona. Supervision and case management.</p>
+        </div>
+
+        <div class="resume-entry">
+            <h4>Speech-Language Pathologist – Simply SLPs, LLC (Owner)</h4>
+            <p>December 2008 – May 2019 | Contract SLP with Public School Districts in California and Arizona. Direct therapy, supervision and case management.</p>
+        </div>
+
+        <div class="resume-entry">
+            <h4>Speech-Language Pathologist</h4>
+            <p>September 2003 – December 2008 | Contracted with various therapy agencies to provide quality in-home speech therapy to children and adults.</p>
+        </div>
+
+        <div class="resume-entry">
+            <h4>Regional Sales Consultant/SLP – Assistive Technology, Inc.</h4>
+            <p>September 2001 – August 2003 | Developed and managed assistive technology sales for clinics, hospitals, and schools. Exceeded goals and contributed to product development.</p>
+        </div>
+
+        <div class="resume-entry">
+            <h4>Speech-Language Pathologist</h4>
+            <p>September 1998 – August 2001 | Worked with Public School Districts in New York. Direct therapy and case management.</p>
+        </div>
     </div>
 </div>
 ```
